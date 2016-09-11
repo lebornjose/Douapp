@@ -2,7 +2,12 @@
  * Created by wangning on 16/5/8.
  */
 import React from 'react';
-import {StyleSheet,View,Text,Image,TouchableOpacity} from 'react-native';
+import {
+	StyleSheet,
+	View,Text,
+	Image,
+	TouchableOpacity   // 本组件用于封装视图,使其可以正确响应触摸事件，当按下的时候，封装的视图的不透明度会降低。这个过程并不会真正改变视图层级，大部分情况下很容易添加到应用中而不会带来一些奇怪的副作用。（译注：此组件与TouchableHighlight的区别在于并没有额外的颜色变化，更适于一般场景）
+} from 'react-native';
 import Util from '../common/util';
 
 let styles = StyleSheet.create({

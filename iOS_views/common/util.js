@@ -6,7 +6,7 @@ import Dimensions from 'Dimensions';
 import React from 'react';
 import {
     PixelRatio,
-    ActivityIndicatorIOS
+    ActivityIndicator
 } from 'react-native';
 
 const Util = {
@@ -39,7 +39,9 @@ const Util = {
             });
     },
     /*loading效果*/
-    loading: <ActivityIndicatorIOS color="#3E00FF" style={{marginTop:40}}/>
+		// 如是使用ActivityIndicatorIOS 系统会有提示，建议你使用 ActivityIndicator ， 所以这才使用
+    loading: <ActivityIndicator color="#3E00FF" size="large" style={{marginTop:40}}/>
+
 };
 
 
