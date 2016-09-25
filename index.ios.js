@@ -6,6 +6,7 @@
 import React, { Component } from 'react'
 import Navigation from './iOS_views/common/navigation'
 import Book from './iOS_views/book/book_list'
+import Music from './iOS_views/music/music'
 import {
   AppRegistry,
   //React-native 基本模块也是最常用模块，AppRegistry模块是React Native应用JavaScript运行的入口。应用的跟组件应用使用AppRegistry.registerComponent进行注册自己。然后原生系统就可以进行加载运行bundle文件包，最后就会可以调用AppRegistry.runApplication进行运行起来应用
@@ -59,7 +60,7 @@ class Dou extends Component{
               selectedTab: '音乐'
             });
           }}>
-          <Navigation component='音乐'/>
+          <Navigation component={Music}/>
         </TabBarIOS.Item>
       </TabBarIOS>
     );
